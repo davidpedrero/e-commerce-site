@@ -1,1 +1,1 @@
-A fully functional demo E-commerce web application built with the MERK stack!
+A fully functional demo E-commerce web application built using the MERK stack!
