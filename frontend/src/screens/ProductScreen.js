@@ -36,7 +36,6 @@ const ProductScreen = () => {
                         <button type='button'>Add to Cart</button>
                     </p>
                 </div>
-
             </div>
         </div>
     )
