@@ -5,10 +5,12 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 //Reducers
 import { cartReducer } from './reducers/cartReducers'
-import { getProductReducer, getProductDetailsReducer } from './reducers/productReducers';
+import { getProductsReducer, getProductDetailsReducer } from './reducers/productReducers';
 
 const reducer = combineReducers({
-    cart: cartReducer
+    cart: cartReducer,
+    getProducts: getProductsReducer,
+    getProductDetails: getProductDetailsReducer
 });
 
 const middleware = [thunk];
