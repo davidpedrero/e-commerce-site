@@ -12,16 +12,16 @@ const ProductScreen = ({history}) => {
 
     const [qty, setQty] = useState(1);
     const dispatch = useDispatch();
-    let { paramsId } = useParams();
+    let params = useParams();
 
     const productDetails = useSelector(state => state.getProductDetails);
     const {loading, error, product} = productDetails;
 
     useEffect(() => {
-        if(product && paramsId !== product._id) {
-            dispatch(getProductDetails(paramsId))
+        if(product && params.id !== product._id) {
+            dispatch(getProductDetails(params.id))
         }
-    }, [dispatch, product]);
+    }, [dispatch, product, params]);
 
     return (
         <div className='productscreen'>
