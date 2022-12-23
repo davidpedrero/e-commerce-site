@@ -52,7 +52,7 @@ const ProductScreen = () => {
                     <div className='productscreen__right'>
                         <div className='right__info'>
                             <p>
-                                Price: <span>${product.price}</span>
+                                Price: <span>${product.price * qty}</span>
                             </p>
                             <p>
                                 Status:{""}

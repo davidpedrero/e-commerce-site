@@ -23,6 +23,16 @@ const CartScreen = () => {
         dispatch(RemoveFromCart(id))
     }
 
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) =>
+            +item.qty + qty, 0
+        )
+    }
+
+    const getCartSubtotal = () => {
+        return cartItems.reduce((price, item) => (item.price * item.qty) + price, 0)
+    }
+
     return (
         <div className='cartscreen'>
             <div className="cartscreen__left">
@@ -33,7 +43,8 @@ const CartScreen = () => {
                     </div>
                 ) : (
                     cartItems.map((item) => 
-                        <CartItem 
+                        <CartItem
+                            key={item.product}
                             item={item} 
                             qtyChangeHandler={qtyChangeHandler}
                             removeFromCart={removeFromCart}
@@ -42,8 +53,8 @@ const CartScreen = () => {
             </div>
             <div className="cartscreen__right">
                 <div className="cartscreen__info">
-                    <p>Subtotal (0) items</p>
-                    <p>$499.99</p>
+                    <p>Subtotal ({(getCartCount())}) items</p>
+                    <p>${getCartSubtotal().toFixed(2)}</p>
                 </div>
                 <div>
                     <button>Proceed to Checkout</button>
