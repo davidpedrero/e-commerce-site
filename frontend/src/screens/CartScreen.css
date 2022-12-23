@@ -8,6 +8,11 @@
     margin-bottom: 1rem;
 }
 
+.cartscreen__left > h2 {
+    margin-bottom: 1rem;
+    /* margin-top: 10rem; */
+}
+
 .cartscreen__left {
     flex: 0.7;
     margin-right: 1rem;
@@ -20,6 +25,11 @@
     background: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     height: fit-content;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgb(0, 9, 74);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0,4);
 }
 
 .cartscreen__right > div {

@@ -52,7 +52,7 @@ const ProductScreen = () => {
                     <div className='productscreen__right'>
                         <div className='right__info'>
                             <p>
-                                Price: <span>${product.price * qty}</span>
+                                Price: <span>${(product.price * qty).toFixed(2)}</span>
                             </p>
                             <p>
                                 Status:{""}

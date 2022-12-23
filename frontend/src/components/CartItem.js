@@ -14,7 +14,7 @@ const CartItem = ({item, qtyChangeHandler, removeFromCart}) => {
             <Link to={`/product/${item.product}`} className="cartitem__name">
                 <p>{item.name}</p>
             </Link>
-            <p className='cartitem__price'>${item.price * item.qty}</p>
+            <p className='cartitem__price'>${(item.price * item.qty).toFixed(2)}</p>
 
             <select 
                 className='cartitem__select'

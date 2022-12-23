@@ -12,6 +12,10 @@
 .left__image {
     margin: 1rem;
     flex: 0.6;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgb(0, 9, 74);
 }
 
 .left__info {
@@ -20,6 +24,11 @@
     background: #fff;
     height: fit-content;
     font-size: 0.9rem;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgb(0, 9, 74);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .left__name {
@@ -47,6 +56,10 @@
     margin: 1rem;
     background: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+    border-color: rgb(0, 9, 74);
 }
 
 .right__info > p {
