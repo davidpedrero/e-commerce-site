@@ -3,6 +3,10 @@ const express = require('express');
 const connectDB = require("./config/db");
 const productRoutes = require('./routes/productRoutes')
 const path = require('path');
+const cors = require("cors");
+
+/* Allowing the frontend to access the backend. */
+app.use(cors());
 
 connectDB();
 
