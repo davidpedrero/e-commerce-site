@@ -9,6 +9,7 @@ node_modules/
 # testing
 /coverage
 
+/frontend/build
 
 # misc
 .DS_Store
