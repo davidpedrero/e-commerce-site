@@ -10,7 +10,11 @@ const app = express();
 
 app.use(express.json());
 
-if(process.env.NODE_ENV == "production") {
+
+
+app.use('/api/products', productRoutes);
+
+if(process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, '/frontend/build')))
     
     app.get('/', (req, res) => {
@@ -22,7 +26,6 @@ if(process.env.NODE_ENV == "production") {
     })
 }
 
-app.use('/api/products', productRoutes);
 
 const PORT = process.env.PORT || 5000;
 
