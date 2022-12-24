@@ -1,6 +1,6 @@
 
 const baseUrl = process.env.NODE_ENV === "production"
-? "https://intelitech.onrender.com/api"
+? "https://intelitech-api.onrender.com"
 : "";
 
 export default baseUrl;
