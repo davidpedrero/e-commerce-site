@@ -6,13 +6,14 @@ const path = require('path');
 const cors = require("cors");
 
 /* Allowing the frontend to access the backend. */
-app.use(cors());
 
 connectDB();
 
 const app = express();
 
 app.use(express.json());
+
+app.use(cors());
 
 app.use((req, res, next) => {
     res.append('Access-Control-Allow-Origin', '*');
