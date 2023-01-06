@@ -40,6 +40,20 @@ const products = [
         description: "JBL Flip 4 is the next generation in the award-winning Flip series; it is a portable Bluetooth speaker that delivers surprisingly powerful stereo sound. This compact speaker is powered by a 3000mAh rechargeable Li-ion battery that offers up to 12 hours of continuous, high-quality audio playtime.",
         price: 140,
         countInStock: 10
+    },
+    {
+        name: "M2 chip Macbook Air",
+        imageUrl: "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        description: "Supercharged by the next-generation M2 chip, the redesigned MacBook Air combines incredible performance and up to 18 hours of battery life into its strikingly thin aluminum enclosure.",
+        price: 1199,
+        countInStock: 14
+    },
+    {
+        name: " Xbox Series S",
+        imageUrl: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510817_sd.jpg;maxHeight=2000;maxWidth=2000",
+        description: "Experience next-gen speed and performance at a great price. Make the most of every gaming minute with Quick Resume, lightning-fast load times, and gameplay of up to 120 FPS—all powered by Xbox Velocity Architecture. Enjoy digital games from four generations of Xbox, with hundreds of optimized titles that look and play better than ever.",
+        price: 299,
+        countInStock: 8
     }
 ];
 
