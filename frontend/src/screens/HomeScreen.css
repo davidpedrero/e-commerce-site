@@ -15,6 +15,10 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.loading__text {
+  color: rgb(6, 6, 169);
+}
+
 @media (max-width: 1232px) {
     .homescreen__products {
         grid-template-columns: repeat(3, 1fr);

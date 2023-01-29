@@ -27,11 +27,10 @@ const HomeScreen = () => {
         <h2 className='homescreen__title'>Latest Products</h2>
         <div className='homescreen__products'>
             { loading ? (
-              <div>
-                <h1>Loading...</h1>
+              <div className='loading__text'>
+                <h1>Loading.....</h1>
                 <br/>
-                <h3>This may take up to a few minutes...</h3>
-                <h3>Thank you for your patience!</h3>
+                <h3>(This may take a few minutes)</h3>
               </div>
             ) : error ? (
                 <h2>{error}</h2>
