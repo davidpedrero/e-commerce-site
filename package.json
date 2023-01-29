@@ -30,7 +30,7 @@
     "web-vitals": "^3.1.0"
   },
   "devDependencies": {
-    "concurrently": "^7.5.0",
+    "concurrently": "^7.6.0",
     "nodemon": "^2.0.20",
     "redux-devtools-extension": "^2.13.9",
     "web-vitals": "^3.1.0"
